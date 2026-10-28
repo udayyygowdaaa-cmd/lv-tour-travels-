@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Now | LV Tour &amp; Travels</title>
+<meta name="description" content="Book a cab or tour package with LV Tour & Travels.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="container nav">
+  <a class="logo" href="index.html" aria-label="LV Tour &amp; Travels home">
+    <img class="logo-img" src="logo.png" alt="LV Tours &amp; Travels logo" width="56" height="56">
+    <span class="logo-text">LV Tour &amp; Travels<small>Bangalore &middot; Mysore</small></span>
+  </a>
+  <button class="menu-btn" aria-label="Menu">&#9776;</button>
+  <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="packages.html">Packages</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a class="cta" href="booking.html">Book Now</a></li></ul></nav>
+</div>
+</header>
+<section class="page-hero"><div class="container"><h1>Book Your Trip</h1><p>Tell us your plan and we'll take care of the rest.</p></div></section>
+
+<section class="section alt"><div class="container">
+  <div class="form-wrap">
+    <h2>Book your trip</h2>
+    <p class="lead">Fill in the details and submit. Your enquiry opens in WhatsApp so you can send it to us instantly, and we'll confirm availability and price.</p>
+    <form data-whatsapp data-title="Booking Enquiry">
+      <div class="row">
+        <div><label for="name">Full name *</label><input id="name" name="name" data-label="Name" required></div>
+        <div><label for="phone">Phone *</label><input id="phone" name="phone" data-label="Phone" type="tel" inputmode="numeric" placeholder="10-digit mobile number" required></div>
+      </div>
+      <div class="row">
+        <div><label for="from">Pickup city *</label><input id="from" name="from" data-label="Pickup" placeholder="Bangalore / Mysore" required></div>
+        <div><label for="destination">Destination *</label><select id="destination" name="destination" data-label="Destination" required><option value="">Select destination</option><option value="Mysore">Mysore</option><option value="Coorg">Coorg</option><option value="Ooty">Ooty</option><option value="Wayanad">Wayanad</option><option value="Hampi">Hampi</option><option value="Goa">Goa</option><option value="Chikmagalur">Chikmagalur</option><option value="Gokarna">Gokarna</option><option value="Kabini">Kabini</option><option value="Munnar">Munnar</option><option value="Other">Other / Custom trip</option></select></div>
+      </div>
+      <div class="row">
+        <div><label for="date">Travel date *</label><input id="date" name="date" data-label="Date" type="date" required></div>
+        <div><label for="days">Number of days</label><input id="days" name="days" data-label="Days" type="number" min="1" max="30" placeholder="e.g. 3"></div>
+      </div>
+      <div class="row">
+        <div><label for="people">Travellers *</label><input id="people" name="travellers" data-label="Travellers" type="number" min="1" max="60" required></div>
+        <div><label for="vehicle">Vehicle</label><select id="vehicle" name="vehicle" data-label="Vehicle"><option value="">No preference</option><option>Hatchback</option><option>Sedan</option><option>SUV / Innova</option><option>Tempo Traveller</option><option>Mini Bus</option></select></div>
+      </div>
+      <label for="notes">Special requests</label>
+      <textarea id="notes" name="notes" data-label="Notes" placeholder="Hotel preference, pickup point, budget..."></textarea>
+      <div style="margin-top:20px"><button class="btn" type="submit">Send Booking Enquiry</button></div>
+      <p class="form-note">No payment is taken online. Final price and confirmation are shared by our team.</p>
+      <div class="msg">Thank you! WhatsApp has opened with your details. Please press send to complete your enquiry.</div>
+    </form>
+  </div>
+</div></section>
+
+<footer>
+<div class="container">
+  <div class="foot">
+    <div>
+      <img class="foot-logo" src="logo.png" alt="LV Tours &amp; Travels logo" width="96" height="96">
+      <h4>LV Tour &amp; Travels</h4>
+      <p>Comfortable cabs, curated tour packages and hassle-free holidays from Bangalore and Mysore.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="packages.html">Tour Packages</a>
+      <a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+918073080995">&#128222; 8073080995</a>
+      <a href="https://wa.me/918073080995" target="_blank" rel="noopener">&#128172; WhatsApp us</a>
+      <a href="contact.html">&#128205; Bangalore &amp; Mysore</a>
+      <a href="booking.html">Book a trip</a>
+    </div>
+  </div>
+  <div class="copy">&copy; <span id="year">2026</span> LV Tour &amp; Travels. All rights reserved.</div>
+</div>
+</footer>
+<a class="wa-float" href="https://wa.me/918073080995" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+<script src="script.js"></script>
+</body>
+</html>
